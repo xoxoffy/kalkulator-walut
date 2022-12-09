@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator walut</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h1>Przelicznik walut</h1>
+        <input type="number" id="inputCurrency" min="1" step="1" value="1" />
+        <select id="currencies">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="CHF">CHF</option>
+        </select>
+        <button id="getDataButton">Przelicz</button>
+      </div>
+
+      <div style="margin-top: 15px">
+        <div style="display: none" class="loader" id="loader"></div>
+        <div style="display: none" id="error"></div>
+        <div id="calculated"></div>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+  </body>
+</html>
