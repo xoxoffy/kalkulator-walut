@@ -87,7 +87,7 @@ const calculateExchange = (currencyRate) => {
     inputValue +
     selectedCurrencyText +
     ' to ' +
-    calculatedExchange +
+    calculatedExchange.toFixed(2) +
     ' złotych';
   calculatedDiv.appendChild(calculatedExchangeSpan);
 };
