@@ -67,7 +67,7 @@ const getData = () => {
         } else if (selectValue === 'EUR') {
           calculateExchange(eur);
         } else if (selectValue === 'CHF') {
-          calculateExchange(chf);
+          calculat3eExchange(chf);
         }
       }
     })
@@ -83,12 +83,10 @@ const calculateExchange = (currencyRate) => {
 
   textVariant(selectValue, inputValue);
 
-  calculatedExchangeSpan.innerText =
-    inputValue +
-    selectedCurrencyText +
-    ' to ' +
-    calculatedExchange.toFixed(2) +
-    ' złotych';
+  calculatedExchangeSpan.innerText = `${inputValue} ${selectedCurrencyText} to ${calculatedExchange.toFixed(
+    2
+  )} złotych`;
+
   calculatedDiv.appendChild(calculatedExchangeSpan);
 };
 
