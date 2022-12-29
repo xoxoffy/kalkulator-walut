@@ -67,7 +67,7 @@ const getData = () => {
         } else if (selectValue === 'EUR') {
           calculateExchange(eur);
         } else if (selectValue === 'CHF') {
-          calculat3eExchange(chf);
+          calculateExchange(chf);
         }
       }
     })
