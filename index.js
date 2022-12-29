@@ -20,17 +20,17 @@ const hideLoader = () => {
 };
 
 const showLoader = () => {
-  loader.style.display = '';
+  loader.style.display = 'block';
 };
 
 const showError = () => {
-  errorDiv.style.display = '';
+  errorDiv.style.display = 'block';
   calculatedDiv.style.display = 'none';
 };
 
 const hideError = () => {
   errorDiv.style.display = 'none';
-  calculatedDiv.style.display = '';
+  calculatedDiv.style.display = 'block';
 };
 
 const getData = () => {
@@ -91,13 +91,7 @@ const calculateExchange = (currencyRate) => {
 };
 
 const textVariant = (selectValue) => {
-  if (selectValue === 'USD') {
-    selectedCurrencyText = ' USD ';
-  } else if (selectValue === 'EUR') {
-    selectedCurrencyText = ' EUR ';
-  } else if (selectValue === 'CHF') {
-    selectedCurrencyText = ' CHF ';
-  }
+  selectedCurrencyText = selectValue;
 };
 
 getDataButton.addEventListener('click', getData);
